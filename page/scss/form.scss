@@ -10,6 +10,13 @@ form {
         outline: none;
     }
 
+    .errors {
+        background: maroon;
+        padding: $padding;
+        border-radius: 4px;
+        font-size: 80%;
+    }
+
     button {
         color: #fff;
         border: 0;

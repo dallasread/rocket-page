@@ -4,255 +4,303 @@
     <title>Hello Focus</title>
 
     <link rel="stylesheet" type="text/css" href="assets/rocket-page.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Muli:400,800" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <style type="text/css">
+        .primary-color {
+            color: #2B2E39;
+        }
+
+        .secondary-color {
+            color: #00DA12;
+        }
+
+        .primary-background {
+            background: #2B2E39;
+        }
+
+        .secondary-background {
+            background: #00DA12;
+        }
+    </style>
 </head>
 <body>
-    <noscript>
-        <div class="section page "><style type="text/css">.primary-color {color: #2B2E39;}.secondary-color {color: #00DA12;}.primary-background {background: #2B2E39;}.secondary-background {background: #00DA12;}</style><div class="section hero " style="background-image: url(&quot;assets/imgs/bg.png&quot;); background-attachment: fixed;"><div class="featured"><div class="container container-large"><img src="assets/imgs/rocket.png" title="" class=""></div></div><div class="container container-large"><form><div class="field content-field "><p>Sign up today for BIG savings!</p></div><div class="field text-field "><label>Name</label><input type="text" name="name" placeholder="Name" class="primary-color" autofocus=""></div><div class="field email-field "><label>Email</label><input type="email" name="email" placeholder="Email" class="primary-color" autofocus=""></div><div class="field password-field "><label>Password</label><input type="password" name="password" placeholder="Password" class="primary-color" autofocus=""></div><div class="field button-field align-right"><label></label><button type="submit" class="secondary-background">Go<i class="fa fa-chevron-right"></i></button></div></form><img src="assets/imgs/logo.png" title="Hello Focus" class="logo"><div class="content"><h1>Get more done!</h1><h2>Forever change your work! Built to help you and your team get more done.</h2></div></div></div><div class="section browser "><div class="container container-large"><div class="bar"><img src="assets/imgs/browser.png" title="" class=""></div><div class="content"><iframe src="https://www.youtube.com/embed/BQyOgTL5wq0" width="100%" frameborder="0" allowfullscreen=""></iframe></div></div></div><div class="section speller primary-color"><div class="container"><h3 class="align-center">Simple<span class="span-wrapper"><span class="secondary-background">Task Management_</span></span>for Higher Completion Rates!</h3></div></div><div class="section timeline primary-color"><div class="container container-large"><div class="events"><div class="event event-right shift-icon"><img src="assets/imgs/archery.png" title="" class=""><h4>Get More Done</h4><p>The principles we follow proven to help you get more done. Hello Focus puts the emphasis on completing one task at a time so you avoid multi-tasking. This means you avoid the Zeigarnik Effect!</p></div><div class="event "><img src="assets/imgs/flask.png" title="" class=""><h4>Backed By Science</h4><p>Our team is obsessed with productivity. It might actually be a problem! We're constantly consuming academic papers on productivity trying to understand how we can apply it to improving our product for you.</p></div><div class="event event-right"><img src="assets/imgs/structure.png" title="" class=""><h4>Stay Organized</h4><p>Not only can multi-tasking make you less productive, not planning your day can equally have damaging effects on your productivity. That's why Hello Focus asks you to plan your day, every morning.</p></div><div class="event "><img src="assets/imgs/flow.png" title="" class=""><h4>Beautiful Roadmaps</h4><p>As you start to invite people to your tasks and projects, you'll start to see how our simple to-do app turns into a sophisticated project management app. Based on resources, people, and time, we start to build beautiful roadmaps.</p></div><div class="event event-right"><img src="assets/imgs/know.png" title="" class=""><h4>Stay "In-The-Know"</h4><p>Skip the daily stand-ups or the check-ins because with Hello Focus you can see what everyone is working on and what they accomplished yesterday in one quick glance. Just another way we simplify your workflow.</p></div></div></div></div><div class="section callout secondary-background"><div class="container container-large"><div class="featured"><img src="assets/imgs/mobile-devices.png" title="" class=""></div><div class="content"><h3>Your tasks, anywhere.</h3><p>Download our applications for itunes or play store to access your work and tasks from your mobile device. Save time and get more done by working from anywhere.</p><ul class="icons"><li><a href="https://itunes.apple.com/ca/app/hello-focus/id1177079562" target="_blank"><img src="assets/imgs/apple-store.png" title="" class=""></a></li></ul></div></div></div><div class="section copyright primary-background"><div class="container container-large"><ul class="icons"><li><a href="https://facebook.com/hellofocus" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="https://twitter.com/hellofocushq" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="https://www.linkedin.com/company/hello-focus" target="_blank"><i class="fa fa-linkedin"></i></a></li></ul><p>Copyright © 2017 Hankinson Consulting Inc. All Rights Reserved.</p></div></div></div>
-    </noscript>
+    <div class="section page">
+        <div class="section hero" style="background-image: url(assets/imgs/bg.png); background-attachment: fixed;">
+            <div class="featured">
+                <div class="container container-large"><img src="assets/imgs/rocket.png">
+                </div>
+            </div>
+            <div class="container container-large"><img src="assets/imgs/logo.png" title="Hello Focus" class="logo">
+                <form>
+                    <div class="form-not-loading">
+                        <input type="hidden" name="api-key">
+                        <div class="field content-field">
+                            <p>Sign up today for BIG savings!</p>
+                        </div>
+                        <div class="field errors"></div>
+                        <div class="field text-field">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Name" class="primary-color">
+                        </div>
+                        <div class="field email-field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Email" class="primary-color">
+                        </div>
+                        <div class="field password-field">
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="Password" class="primary-color">
+                        </div>
+                        <div class="field button-field align-right">
+                            <label></label>
+                            <button type="submit" class="secondary-background">Go<i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-loading">
+                        Loading...
+                    </div>
+                </form>
+                <div class="content">
+                    <h1>Get more done!</h1>
+                    <h2>Forever change your work! Built to help you and your team get more done.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="section browser">
+            <div class="container container-large">
+                <div class="bar"><img src="assets/imgs/browser.png">
+                </div>
+                <div class="content">
+                    <iframe src="https://www.youtube.com/embed/BQyOgTL5wq0" width="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="section speller primary-color">
+            <div class="container">
+                <h3 class="align-center">Simple<span class="span-wrapper"><span class="secondary-background speller-word">Project Productivity_</span></span>for Higher Completion Rates!</h3>
+            </div>
+        </div>
+        <div class="section timeline primary-color">
+            <div class="container container-large">
+                <div class="events">
+                    <div class="event event-right shift-icon"><img src="assets/imgs/archery.png">
+                        <h4>Get More Done</h4>
+                        <p>The principles we follow proven to help you get more done. Hello Focus puts the emphasis on completing one task at a time so you avoid multi-tasking. This means you avoid the Zeigarnik Effect!</p>
+                    </div>
+                    <div class="event"><img src="assets/imgs/flask.png">
+                        <h4>Backed By Science</h4>
+                        <p>Our team is obsessed with productivity. It might actually be a problem! We're constantly consuming academic papers on productivity trying to understand how we can apply it to improving our product for you.</p>
+                    </div>
+                    <div class="event event-right"><img src="assets/imgs/structure.png">
+                        <h4>Stay Organized</h4>
+                        <p>Not only can multi-tasking make you less productive, not planning your day can equally have damaging effects on your productivity. That's why Hello Focus asks you to plan your day, every morning.</p>
+                    </div>
+                    <div class="event"><img src="assets/imgs/flow.png">
+                        <h4>Beautiful Roadmaps</h4>
+                        <p>As you start to invite people to your tasks and projects, you'll start to see how our simple to-do app turns into a sophisticated project management app. Based on resources, people, and time, we start to build beautiful roadmaps.</p>
+                    </div>
+                    <div class="event event-right"><img src="assets/imgs/know.png">
+                        <h4>Stay "In-The-Know"</h4>
+                        <p>Skip the daily stand-ups or the check-ins because with Hello Focus you can see what everyone is working on and what they accomplished yesterday in one quick glance. Just another way we simplify your workflow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section callout secondary-background">
+            <div class="container container-large">
+                <div class="featured"><img src="assets/imgs/mobile-devices.png">
+                </div>
+                <div class="content">
+                    <h3>Your tasks, anywhere.</h3>
+                    <p>Download our applications for iTunes or Google Play store to access your work and tasks from your mobile device. Save time and get more done by working from anywhere.</p>
+                    <ul class="icons">
+                        <li>
+                            <a href="https://itunes.apple.com/ca/app/hello-focus/id1177079562" target="_blank"><img src="assets/imgs/apple-store.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section copyright primary-background">
+            <div class="container container-large">
+                <ul class="icons">
+                    <li><a href="https://facebook.com/hellofocus" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/hellofocushq" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/company/hello-focus" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                <p>Copyright &copy; 2017 Hankinson Consulting Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/rocket-page.min.js"></script>
     <script type="text/javascript">
-        var Rocket = window.Rocket,
-            page = new Rocket.Page({
-                colors: {
-                    primary: '#2B2E39',
-                    secondary: '#00DA12',
-                },
-                sections: [
-                    new Rocket.Sections.Hero({
-                        style: {
-                            'background-image': 'url(assets/imgs/bg.png)',
-                            'background-attachment': 'fixed'
-                        },
-                        logo: {
-                            src: 'assets/imgs/logo.png',
-                            title: 'Hello Focus'
-                        },
-                        img: {
-                            src: 'assets/imgs/rocket.png'
-                        },
-                        title: 'Get more done!',
-                        subtitle: 'Forever change your work! Built to help you and your team get more done.',
-                        submit: function() {
-                            var _ = this.section,
-                                user = getFields(_.get('fields')),
-                                errors = validate(),
-                                API_URL = 'https://ogjuxjz45h.execute-api.us-east-1.amazonaws.com/dev',
-                                WEB_URL = 'https://app.hellofocus.com';
+        (function($) {
+            // START LABELLER
+            $(document).on('keyup', '.field input', function() {
+                var $field = $(this).closest('.field'),
+                    hasLength = $(this).val().length;
 
-                            function getFields(fields) {
-                                var data = {},
-                                    field;
-
-                                for (var i = fields.length - 1; i >= 0; i--) {
-                                    field = fields[i];
-
-                                    if (field.name) {
-                                        data[field.name] = field.value;
-                                    }
-                                }
-
-                                return data;
-                            }
-
-                            function validate() {
-                                var errors = [];
-
-                                if (_.get('apiKey.length')) {
-                                    errors.push('Doesn\'t seem valid. Please refresh the page');
-                                }
-
-                                return errors;
-                            }
-
-                            if (!errors.length) {
-                                user.access_token = btoa(Math.random() + Date.now() + user.email).slice(10, 36);
-
-                                jQuery.ajax({
-                                    url: API_URL + '/users',
-                                    method: 'POST',
-                                    contentType: 'application/json',
-                                    data: JSON.stringify({
-                                        user: user
-                                    }),
-                                    success(data) {
-                                        if (data.errors && data.errors.length) {
-                                            return alert(data.errors);
-                                        }
-
-                                        var authString = user.email + ':' + user.access_token,
-                                            token = encodeURIComponent(btoa(authString));
-
-                                        window.location = WEB_URL + '/sessions/token/' + token;
-                                    },
-                                    error(err) {
-                                        alert(err.message);
-                                    }
-                                });
-                            } else {
-                                alert(errors);
-                            }
-
-                            return false;
-                        },
-                        fields: [
-                            {
-                                type: 'content',
-                                tag: 'p',
-                                content: 'Sign up today for BIG savings!'
-                            },
-                            {
-                                type: 'text',
-                                placeholder: 'Name',
-                                label: 'Name',
-                                name: 'name',
-                                class: 'primary-color'
-                            },
-                            {
-                                type: 'email',
-                                placeholder: 'Email',
-                                label: 'Email',
-                                name: 'email',
-                                class: 'primary-color'
-                            },
-                            {
-                                type: 'password',
-                                placeholder: 'Password',
-                                label: 'Password',
-                                name: 'password',
-                                class: 'primary-color'
-                            },
-                            {
-                                type: 'button',
-                                fieldClass: 'align-right',
-                                class: 'secondary-background',
-                                content: 'Go',
-                                fa: 'chevron-right'
-                            }
-                        ]
-                    }),
-                    new Rocket.Sections.Browser({
-                        img: {
-                            src: 'assets/imgs/browser.png'
-                        },
-                        video: {
-                            src: 'https://www.youtube.com/embed/BQyOgTL5wq0'
-                        }
-                    }),
-                    new Rocket.Sections.Speller({
-                        before: 'Simple',
-                        letterFPS: 50,
-                        words: [
-                            'Task Management',
-                            'Project Productivity',
-                            'Time Management',
-                            'Team Communication'
-                        ],
-                        after: 'for Higher Completion Rates!',
-                        class: 'primary-color'
-                    }),
-                    new Rocket.Sections.Timeline({
-                        class: 'primary-color',
-                        events: [
-                            {
-                                class: 'event-right shift-icon',
-                                img: {
-                                    src: 'assets/imgs/archery.png'
-                                },
-                                title: 'Get More Done',
-                                content: 'The principles we follow proven to help you get more done. Hello Focus puts the emphasis on completing one task at a time so you avoid multi-tasking. This means you avoid the Zeigarnik Effect!'
-                            },
-                            {
-                                img: {
-                                    src: 'assets/imgs/flask.png'
-                                },
-                                title: 'Backed By Science',
-                                content: 'Our team is obsessed with productivity. It might actually be a problem! We\'re constantly consuming academic papers on productivity trying to understand how we can apply it to improving our product for you.'
-                            },
-                            {
-                                class: 'event-right',
-                                img: {
-                                    src: 'assets/imgs/structure.png'
-                                },
-                                title: 'Stay Organized',
-                                content: 'Not only can multi-tasking make you less productive, not planning your day can equally have damaging effects on your productivity. That\'s why Hello Focus asks you to plan your day, every morning.'
-                            },
-                            {
-                                img: {
-                                    src: 'assets/imgs/flow.png'
-                                },
-                                title: 'Beautiful Roadmaps',
-                                content: 'As you start to invite people to your tasks and projects, you\'ll start to see how our simple to-do app turns into a sophisticated project management app. Based on resources, people, and time, we start to build beautiful roadmaps.'
-                            },
-                            {
-                                class: 'event-right',
-                                img: {
-                                    src: 'assets/imgs/know.png'
-                                },
-                                title: 'Stay "In-The-Know"',
-                                content: 'Skip the daily stand-ups or the check-ins because with Hello Focus you can see what everyone is working on and what they accomplished yesterday in one quick glance. Just another way we simplify your workflow.'
-                            },
-                        ]
-                    }),
-                    new Rocket.Sections.Callout({
-                        class: 'secondary-background',
-                        title: 'Your tasks, anywhere.',
-                        content: 'Download our applications for itunes or play store to access your work and tasks from your mobile device. Save time and get more done by working from anywhere.',
-                        img: {
-                            src: 'assets/imgs/mobile-devices.png'
-                        },
-                        icons: [
-                            {
-                                img: {
-                                    src: 'assets/imgs/apple-store.png'
-                                },
-                                url: 'https://itunes.apple.com/ca/app/hello-focus/id1177079562',
-                                target: '_blank'
-                            },
-                            // {
-                            //     img: {
-                            //         src: 'assets/imgs/google-store.png'
-                            //     },
-                            //     url: 'google'
-                            // }
-                        ]
-                    }),
-                    new Rocket.Sections.Copyright({
-                        copyright: 'Copyright © 2017 Hankinson Consulting Inc. All Rights Reserved.',
-                        class: 'primary-background',
-                        icons: [
-                            {
-                                fa: 'facebook',
-                                url: 'https://facebook.com/hellofocus',
-                                target: '_blank'
-                            },
-                            {
-                                fa: 'twitter',
-                                url: 'https://twitter.com/hellofocushq',
-                                target: '_blank'
-                            },
-                            {
-                                fa: 'linkedin',
-                                url: 'https://www.linkedin.com/company/hello-focus',
-                                target: '_blank'
-                            }
-                        ]
-                    })
-                ]
+                if (hasLength && !$field.hasClass('field-has-length')) {
+                    $field.addClass('field-has-length');
+                } else if (!hasLength && $field.hasClass('field-has-length')) {
+                    $field.removeClass('field-has-length');
+                }
             });
+            // END LABELLER
 
-        while (document.body.hasChildNodes()) {
-            document.body.removeChild(document.body.lastChild);
-        }
+            // START SPELLER
+            var $word = $('.speller-word')[0],
+                LETTER_FPS = 50,
+                WORD_FPS = 1500,
+                WORDS = [
+                    'Task Management',
+                    'Project Productivity',
+                    'Time Management',
+                    'Team Communication'
+                ];
 
-        document.body.appendChild(page.element);
+            findWord();
+
+            function findWord(lastWord) {
+                var nextIndex = WORDS.indexOf(lastWord || '') + 1,
+                    word;
+
+                if (!lastWord || nextIndex >= WORDS.length) {
+                    word = WORDS[0];
+                } else {
+                    word = WORDS[nextIndex];
+                }
+
+                spell(word, 1);
+            }
+
+            function spell(word, index, isDescending) {
+                if (isDescending) {
+                    if (index === -1) {
+                        setTimeout(function() {
+                            findWord(word);
+                        }, LETTER_FPS);
+                    } else {
+                        $word.innerText = word.slice(0, index) + '_';
+
+                        setTimeout(function() {
+                            spell(word, index - 1, true);
+                        }, LETTER_FPS);
+                    }
+                } else {
+                    if (index <= word.length) {
+                        $word.innerText = word.slice(0, index) + '_';
+
+                        setTimeout(function() {
+                            spell(word, index + 1);
+                        }, LETTER_FPS);
+                    } else {
+                        setTimeout(function() {
+                            spell(word, index - 1, true);
+                        }, WORD_FPS);
+                    }
+                }
+            }
+            // END SPELLER
+
+            // START FORM SUBMISSION
+            // These functions are for form submissions to register an account with our app.
+            var API_URL = 'https://ogjuxjz45h.execute-api.us-east-1.amazonaws.com/dev',
+                WEB_URL = 'https://app.hellofocus.com';
+
+            init($('form'));
+
+            function validate($form) {
+                var errors = [];
+
+                if ($form.find('[name="api-key"]').val().length) {
+                    errors.push('Doesn\'t seem valid. Please refresh the page');
+                }
+
+                return errors;
+            }
+
+            function formErrors($form, errors) {
+                var $errors = $form.find('.errors');
+
+                $errors.empty();
+
+                for (var i = 0; i < errors.length; i++) {
+                    $('<p>').text(errors[i]).appendTo($errors);
+                }
+
+                $errors.show();
+            }
+
+            function init($form) {
+                $form.find('.form-loading').hide();
+                $form.find('.errors').hide();
+
+                $form.on('submit', function() {
+                    var $form = $(this),
+                        errors = validate($form);
+
+                    if (!errors.length) {
+                        var user = serialize($form);
+
+                        user.access_token = btoa(Math.random() + Date.now() + user.email).slice(10, 36);
+
+                        $form.find('.form-not-loading').hide();
+                        $form.find('.form-loading').show();
+                        $form.find('.errors').hide();
+
+                        $.ajax({
+                            url: API_URL + '/users',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                user: user
+                            }),
+                            success(data) {
+                                if (data.errors && data.errors.length) return formErrors($form, data.errors[0].split(/,\s+/));
+
+                                var authString = data.user.email + ':' + user.access_token,
+                                    token = encodeURIComponent(btoa(authString));
+
+                                window.location = WEB_URL + '/sessions/token/' + token;
+                            },
+                            error(err) {
+                                formErrors($form, [err.message]);
+                            },
+                            complete() {
+                                $form.find('.form-not-loading').show();
+                                $form.find('.form-loading').hide();
+                            }
+                        });
+                    } else {
+                        formErrors($form, errors);
+                    }
+
+                    return false;
+                });
+            }
+
+            function serialize($form) {
+                var obj = {};
+
+                $form.find('[name]').each(function() {
+                    obj[$(this).attr('name')] = $(this).val();
+                });
+
+                return obj;
+            }
+            // END FORM SUBMISSION
+        })(jQuery);
     </script>
 </body>
 </html>
