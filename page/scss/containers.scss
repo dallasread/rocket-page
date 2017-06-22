@@ -1,0 +1,12 @@
+.container {
+    @include clearfix();
+
+    margin: 0 auto;
+    width: 100%;
+    padding: $padding;
+    position: relative;
+
+    &.container-large {
+        max-width: 1080px;
+    }
+}

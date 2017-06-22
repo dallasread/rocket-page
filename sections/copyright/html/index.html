@@ -1,0 +1,13 @@
+<div class="container container-large">
+    <ul class="icons">
+        {{#each icons}}
+            <li>
+                <a href="{{url}}" target="{{target || '_self'}}">
+                    <i class="fa fa-{{fa}}"></i>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+
+    <p>{{copyright}}</p>
+</div>

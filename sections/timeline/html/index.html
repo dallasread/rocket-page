@@ -1,0 +1,11 @@
+<div class="container container-large">
+    <div class="events">
+        {{#each events}}
+            <div class="event {{class}}">
+                {{>img img=(image || img)}}
+                <h4>{{title}}</h4>
+                <p>{{content}}</p>
+            </div>
+        {{/each}}
+    </div>
+</div>

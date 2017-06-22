@@ -1,0 +1,35 @@
+form {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"] {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 3px;
+        border: 0;
+        outline: none;
+    }
+
+    button {
+        color: #fff;
+        border: 0;
+        border-radius: 30px;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        .fa {
+            font-size: 70%;
+            margin-left: $padding;
+        }
+    }
+
+    .field {
+        margin-bottom: $padding;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

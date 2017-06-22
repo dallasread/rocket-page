@@ -1,0 +1,38 @@
+.section.callout {
+    color: #fff;
+
+    .featured {
+        float: left;
+        width: 43%;
+        margin-top: -25%;
+
+        @media (max-width: 640px) {
+            float: none;
+            margin-top: $padding * 2;
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    .icons {
+        margin-top: $padding * 2;
+
+        li {
+            display: inline-block;
+            margin-right: $padding;
+        }
+    }
+
+    .content {
+        float: right;
+        width: 50%;
+        margin: 70px 0;
+
+        @media (max-width: 640px) {
+            width: 100%;
+            margin: ($padding * 2) 0;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+$blue: #26333A;
+$red: #F80000;
+
+html, body{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+i, em {
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}

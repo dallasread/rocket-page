@@ -1,0 +1,36 @@
+.section.copyright {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 70%;
+
+    p {
+        float: left;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    .icons {
+        float: right;
+
+        li {
+            display: inline;
+
+            a {
+                padding: 10px 15px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        p, .icons {
+            float: none;
+            text-align: center;
+        }
+
+        .icons {
+            font-size: 150%;
+            margin-bottom: $padding;
+        }
+    }
+}

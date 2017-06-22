@@ -1,0 +1,43 @@
+body {
+    font-family: 'Muli', Helvetica Neue, Helvetica, Arial, Sans Serif;
+    font-size: 21px;
+    line-height: 1.6;
+
+    @media (max-width: 880px) {
+        font-size: 17px;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 15px;
+    }
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-size: 160%;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+h3 {
+    font-size: 140%;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+h4 {
+    font-size: 130%;
+}
+
+h5 {
+    font-size: 120%;
+}
+
+h6 {
+    font-size: 110%;
+}

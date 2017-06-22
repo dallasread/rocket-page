@@ -1,0 +1,46 @@
+.section.browser {
+    margin-top: -38%;
+    line-height: 1;
+
+    .bar {
+        margin: 0;
+        margin-bottom: -3px;
+    }
+
+    .content {
+        background: #fff;
+        border: 1px solid #bbb;
+
+        &:empty {
+            &:before {
+                content: 'Loading...';
+                text-transform: uppercase;
+                letter-spacing: -0.03em;
+                text-align: center;
+                width: 100%;
+                text-align: center;
+                display: block;
+                padding: 25% 0;
+                font-size: 80%;
+                opacity: 0.5;
+            }
+        }
+
+        iframe {
+            margin-bottom: -3px;
+            height: 590px;
+
+            @media (max-width: 920px) {
+                height: 450px;
+            }
+
+            @media (max-width: 800px) {
+                height: 350px;
+            }
+
+            @media (max-width: 640px) {
+                height: 220px;
+            }
+        }
+    }
+}

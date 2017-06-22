@@ -1,0 +1,28 @@
+{{#with form}}
+    <form section:{{section}} submit:{{submit}}>
+        {{#each fields}}
+            <div class="field {{type}}-field {{fieldClass}} {{#if value.length}}field-has-length{{/if}}" field:{{this}}>
+                {{#if type === 'content'}}
+                    {{#if tag === 'p'}}
+                        <p>{{content}}</p>
+                    {{else}}
+                        <h4>{{content}}</h4>
+                    {{/if}}
+                {{else}}
+                    <label>{{label}}</label>
+
+                    {{#if type === 'button'}}
+                        <button type="submit" class="{{class}}">
+                            {{content}}
+                            {{#if fa}}
+                                <i class="fa fa-{{fa}}"></i>
+                            {{/if}}
+                        </button>
+                    {{else}}
+                        <input type="{{type}}" name="{{name}}" placeholder="{{placeholder}}" class="{{class}}" autofocus value::{{value}} required>
+                    {{/if}}
+                {{/if}}
+            </div>
+        {{/each}}
+    </form>
+{{/with}}
