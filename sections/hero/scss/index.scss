@@ -54,12 +54,12 @@
             border-radius: 18px;
             position: absolute;
             top: -$padding;
-            right: -$padding;
+            right: $padding * 1;
             bottom: -$padding;
             left: -$padding;
-            -ms-transform: rotate(-6deg); /* IE 9 */
-            -webkit-transform: rotate(-6deg); /* Chrome, Safari, Opera */
-            transform: rotate(-6deg);
+            // -ms-transform: rotate(-2deg); /* IE 9 */
+            // -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+            // transform: rotate(-2deg);
         }
 
         @media (max-width: 920px) {
@@ -140,6 +140,7 @@
         right: 0;
         left: 0;
         text-align: center;
+        overflow: hidden;
 
         img {
             margin-right: -120%;

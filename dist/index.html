@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//fonts.googleapis.com/css?family=Muli:400,800" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="https://app.hellofocus.com/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <style type="text/css">
         .primary-color {
@@ -267,17 +268,19 @@
                                 user: user
                             }),
                             success(data) {
-                                if (data.errors && data.errors.length) return formErrors($form, data.errors[0].split(/,\s+/));
+                                if (data.errors && data.errors.length) {
+                                    return formErrors($form, data.errors[0].split(/,\s+/));
+                                }
 
-                                var authString = data.user.email + ':' + user.access_token,
+                                var authString = data.user.email + ':' + user.password,
                                     token = encodeURIComponent(btoa(authString));
+
+                                console.log(WEB_URL + '/sessions/token/' + token)
 
                                 window.location = WEB_URL + '/sessions/token/' + token;
                             },
                             error(err) {
                                 formErrors($form, [err.message]);
-                            },
-                            complete() {
                                 $form.find('.form-not-loading').show();
                                 $form.find('.form-loading').hide();
                             }
